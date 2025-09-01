@@ -1,6 +1,4 @@
 import ProductsComponent from '@/components/products/products.component'
-import Header from "@/common/components/header/header";
-import Footer from "@/common/components/footer/footer";
 import React from 'react'
 
 async function getProducts() {

@@ -1,6 +1,4 @@
 import Hero from '@/common/components/hero-sec/hero-sec'
-import productImg from "@/common/assets/images/product.jpg"
-import Image from 'next/image'
 import Link from 'next/link';
 
 export default function ProductsComponent({data}) {
@@ -14,19 +12,7 @@ export default function ProductsComponent({data}) {
                         {
                             ALL_PRODUCTS?.map((item, i) => {
                                 return (
-                                    // <div className="wow fadeInUp" data-wow-delay=".2s" key={i.toString()}>
-                                    //     <div className="pp-project-card-item">
-                                    //         <div className="pp-project-image">
-                                    //             <Image src={productImg} alt="" />
-                                    //             <div className="pp-project-content">
-                                    //             <h3>
-                                    //                 <Link href={`products/${item._id}`}>{item.productName}</Link>
-                                    //             </h3>
-                                    //             <Link href={`products/${item._id}`} className="pp-link-btn">{`View ${item.productName}`}</Link>
-                                    //         </div>
-                                    //         </div>
-                                    //     </div>
-                                    // </div>
+                                    
                                     <div class="wow fadeInUp" data-wow-delay=".2s">
                                         <div class="pp-hosting-box-items pp-hosting-box-items-products">
                                             <div class="icon">

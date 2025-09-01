@@ -2,12 +2,6 @@ import serviec1 from "@/common/assets/icons/01.svg"
 import serviec2 from "@/common/assets/icons/02.svg"
 import serviec3 from "@/common/assets/icons/03.svg"
 
-import keyfeature1 from "@/common/assets/images/key-feature1.jpg"
-import keyfeature2 from "@/common/assets/images/key-feature2.jpg"
-import keyfeature3 from "@/common/assets/images/key-feature3.jpg"
-import keyfeature4 from "@/common/assets/images/key-feature4.jpg"
-import keyfeature5 from "@/common/assets/images/key-feature5.jpg"
-import keyfeature6 from "@/common/assets/images/key-feature6.jpg"
 
 export const HOME_SERVICES = [
     {

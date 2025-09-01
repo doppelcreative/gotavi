@@ -1,7 +1,4 @@
-import Image from "next/image";
 import { MdArrowForwardIos } from "react-icons/md";
-import shape from "@/common/assets/images/banner.jpg"
-
 
 export default function Hero({title}) {
   return (

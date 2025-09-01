@@ -1,6 +1,4 @@
 import Blogs from '@/components/blogs/blogs.component'
-import Header from "@/common/components/header/header";
-import Footer from "@/common/components/footer/footer";
 
 async function getBlogs() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs`, {

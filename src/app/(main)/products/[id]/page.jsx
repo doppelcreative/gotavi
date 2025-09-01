@@ -1,6 +1,4 @@
 import ProductsDetails from '@/components/productsDetails/productsDetails.component'
-import Header from "@/common/components/header/header";
-import Footer from "@/common/components/footer/footer";
 
 export default async function page({params}) {
     const id = await params; 

@@ -1,12 +1,10 @@
 import BlogDetail from "@/components/blog-detail/blog-detail.component";
-import Header from "@/common/components/header/header";
-import Footer from "@/common/components/footer/footer";
 
 export async function generateMetadata({ params }) {
-  const id = params.id;
+  const id = await params;
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs/${id}`,
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs/${id.id}`,
     {
       method: "GET",
       headers: {
@@ -34,10 +32,10 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
-  const id = params.id;
+  const id = await params;
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs/${id}`,
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/blogs/${id.id}`,
     {
       method: "GET",
       headers: {
