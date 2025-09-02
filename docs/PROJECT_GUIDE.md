@@ -68,21 +68,6 @@ export function GridList({ items, renderItem, className }) {
 
 ### API Integration
 
-#### Blogs (Public)
-- Hook: `src/components/blogs/use-blog.hook.js`
-  - GET `${NEXT_PUBLIC_BACKEND_URL}/api/blogs`
-  - Returns `{ blog }` array
-
-Usage:
-```jsx
-import useBlog from "@/components/blogs/use-blog.hook";
-
-export default function BlogsPage() {
-  const { blog } = useBlog();
-  // pass blog to a list component
-}
-```
-
 Expected API response for list:
 ```json
 [
@@ -142,7 +127,7 @@ export function FeaturesSection({ title, subtitle, features }) {
 }
 ```
 
-Use it with constants or API data:
+Use it with constants or API data and also same for banner hero section:
 ```jsx
 import { WHAT_WE_DO } from "@/components/home/home.constant";
 
